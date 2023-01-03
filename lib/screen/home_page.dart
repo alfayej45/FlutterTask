@@ -105,19 +105,32 @@ class _HomePageState extends State<HomePage> {
                   FontWeight.bold,
                       fontSize: 16)),
                   children: [
-                    ListView.builder(
-                        primary: false,
-                        shrinkWrap: true,
-                        itemCount: data.length,
-                        itemBuilder: (context,index){
-                          return Padding(
-                            padding: const EdgeInsets.only(left: 72,bottom: 10,top: 5),
-                            child: Text(data[index].toString(),style: TextStyle(fontWeight:
-                            FontWeight.bold,
-                              color: Color(0xFF10AB83),
-                              fontSize: 14,),),
-                          );
-                        }
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Container(
+                        height: 150,
+                        decoration: BoxDecoration(
+                            border: Border(
+                                left: BorderSide(
+                                  color: Color(0xFF10AB83),
+                                )
+                            )
+                        ),
+                        child: ListView.builder(
+                            primary: false,
+                            shrinkWrap: true,
+                            itemCount: data.length,
+                            itemBuilder: (context,index){
+                              return Padding(
+                                padding: const EdgeInsets.only(left: 72,bottom: 10,top: 5),
+                                child: Text(data[index].toString(),style: TextStyle(fontWeight:
+                                FontWeight.bold,
+                                  color: Color(0xFF10AB83),
+                                  fontSize: 14,),),
+                              );
+                            }
+                        ),
+                      ),
                     )
                   ],
                 ),
@@ -128,18 +141,31 @@ class _HomePageState extends State<HomePage> {
                   FontWeight.bold,
                     fontSize: 16,)),
                   children: [
-                    ListView.builder(
-                        primary: false,
-                        shrinkWrap: true,
-                        itemCount: data.length,
-                        itemBuilder: (context,index){
-                          return Padding(
-                            padding: const EdgeInsets.only(left: 72,bottom: 10),
-                            child: Text(data[index].toString(),style: TextStyle(fontWeight:
-                            FontWeight.bold,
-                                fontSize: 15,color: Color(0xFF10AB83)),),
-                          );
-                        }
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Container(
+                       height: 150,
+                        decoration: BoxDecoration(
+                          border: Border(
+                              left: BorderSide(
+                                color: Color(0xFF10AB83),
+                              )
+                          )
+                        ),
+                        child: ListView.builder(
+                            primary: false,
+                            shrinkWrap: true,
+                            itemCount: data.length,
+                            itemBuilder: (context,index){
+                              return Padding(
+                                padding: const EdgeInsets.only(left: 72,bottom: 10),
+                                child: Text(data[index].toString(),style: TextStyle(fontWeight:
+                                FontWeight.bold,
+                                    fontSize: 15,color: Color(0xFF10AB83)),),
+                              );
+                            }
+                        ),
+                      ),
                     )
                   ],
                 ),
@@ -150,18 +176,32 @@ class _HomePageState extends State<HomePage> {
                   FontWeight.bold,
                     fontSize: 16,)),
                   children: [
-                    ListView.builder(
-                        primary: false,
-                        shrinkWrap: true,
-                        itemCount: data.length,
-                        itemBuilder: (context,index){
-                          return Padding(
-                              padding: const EdgeInsets.only(left: 72,bottom: 10),
-                              child: Text(data[index].toString(),style: TextStyle(fontWeight:
-                              FontWeight.bold,color: Color(0xFF10AB83),
-                                fontSize: 14,),
-                              ));
-                        }
+
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Container(
+                        height: 150,
+                        decoration: BoxDecoration(
+                            border: Border(
+                                left: BorderSide(
+                                  color: Color(0xFF10AB83),
+                                )
+                            )
+                        ),
+                        child: ListView.builder(
+                            primary: false,
+                            shrinkWrap: true,
+                            itemCount: data.length,
+                            itemBuilder: (context,index){
+                              return Padding(
+                                  padding: const EdgeInsets.only(left: 72,bottom: 10),
+                                  child: Text(data[index].toString(),style: TextStyle(fontWeight:
+                                  FontWeight.bold,color: Color(0xFF10AB83),
+                                    fontSize: 14,),
+                                  ));
+                            }
+                        ),
+                      ),
                     )
                   ],
                 )
